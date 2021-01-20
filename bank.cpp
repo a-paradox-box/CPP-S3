@@ -56,9 +56,9 @@ float BankAccount::interest = 1.2;
 int main(){
     BankAccount A("HarrisonWells", 1000, 129192192, "current");
     BankAccount B(A);
-    // A.displayData();
-    // B.displayData();
-    // B.getData();
-    // BankAccount C(B);
-    // C.displayData();
+    A.displayData();
+    B.displayData();
+    B.getData();
+    BankAccount C(B);
+    C.displayData();
 }
