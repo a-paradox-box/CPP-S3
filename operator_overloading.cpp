@@ -6,7 +6,7 @@ class Complex{
     int imaginary;
     // display function
     void display(){
-        std::printf("%d+%di\n", realnumber, imaginary);
+	std::cout<<realnumber<<"+"<<imaginary<<"i\n";
     };
     void getData(){
         std::cout<<"Enter the real number part :- ";
