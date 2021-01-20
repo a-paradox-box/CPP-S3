@@ -9,7 +9,7 @@ class Mark{
         mark = x;
     }
     void displayMark(){
-        printf("Mark : %d\n", mark);
+	cout<<"Mark: "<<mark<<"\n";
     }
     Mark(){
         mark = 0;
@@ -34,9 +34,9 @@ class Student: public Mark{
     }
     void displayData(){
         cout << "\t\tStudent Details\n";
-        printf("Name : %s\n", name.c_str());
-        printf("Roll No : %d\n", rollno);
-        printf("Class : %d\n", classno);
+	cout<<"Name: "<<name.c_str()<<"\n";
+        cout<<"Roll No: "<<rollno<<"\n";
+        cout<<"Class: "<<classno<<"\n";
         displayMark();
     }
     Student(){
