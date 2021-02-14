@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string.h>
 #include <string>
-#include <typeinfo>
 
 class BankAccount {
     public:
@@ -40,7 +39,7 @@ class BankAccount {
         account_number = no;
         strcpy(name, name_str.c_str());
         strcpy(type, typ.c_str());
-        
+
     }
     BankAccount(BankAccount &obj)
     {
