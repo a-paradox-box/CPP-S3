@@ -7,7 +7,7 @@ class Employee{
     int employee_id;
     int employee_age;
     std::string employee_name;
-    Employee(){  // default constructor 
+    Employee(){  // default constructor
         employee_id = 0;
         employee_age = 20;
         employee_name = '\0';
@@ -34,13 +34,13 @@ class Employee{
 };
 
 int main(){
-    Employee arrays[7];
-    for(int x = 0; x<=6 ; x++){
+    Employee arrays[3];
+    for(int x = 0; x<=2 ; x++){
         Employee temp;
         temp.getData();
         arrays[x] = temp;
     }
-    for(int x = 0; x<=6 ; x++){
+    for(int x = 0; x<=2 ; x++){
         arrays[x].displayData();
     }
 }
