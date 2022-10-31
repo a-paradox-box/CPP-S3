@@ -2,29 +2,32 @@
 #include <string.h>
 #include <string>
 
-class BankAccount {
-    public:
+class BankAccount
+{
+public:
     static float interest;
     int balance;
     char name[30];
     char type[10];
     long int account_number;
-    void getData() {
-    std::cout<<"Enter account name (<30): ";
-    std::cin>>name;
-    std::cout<<"Enter account number: ";
-    std::cin>>account_number;
-    std::cout<<"Enter account balance: ";
-    std::cin>>balance;
-    std::cout<<"Enter account type: ";
-    std::cin>>type;
+    void getData()
+    {
+        std::cout << "Enter account name (<30): ";
+        std::cin >> name;
+        std::cout << "Enter account number: ";
+        std::cin >> account_number;
+        std::cout << "Enter account balance: ";
+        std::cin >> balance;
+        std::cout << "Enter account type: ";
+        std::cin >> type;
     };
-    void displayData(){
-        std::cout<<"Bank Account Details"<<std::endl;
-        std::cout<<"Name: "<<name<<std::endl;
-        std::cout<<"Account Number: "<<account_number<<std::endl;
-        std::cout<<"Balance: "<<balance<<std::endl;
-        std::cout<<"Type of account: "<<type<<std::endl;
+    void displayData()
+    {
+        std::cout << "Bank Account Details" << std::endl;
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Account Number: " << account_number << std::endl;
+        std::cout << "Balance: " << balance << std::endl;
+        std::cout << "Type of account: " << type << std::endl;
     };
     BankAccount()
     {
@@ -39,7 +42,6 @@ class BankAccount {
         account_number = no;
         strcpy(name, name_str.c_str());
         strcpy(type, typ.c_str());
-
     }
     BankAccount(BankAccount &obj)
     {
@@ -52,7 +54,8 @@ class BankAccount {
 
 float BankAccount::interest = 1.2;
 
-int main(){
+int main()
+{
     BankAccount A("HarrisonWells", 1000, 129192192, "current");
     BankAccount B(A);
     A.displayData();
